@@ -7,12 +7,20 @@ const {categorias, productos_categorias} = tables;
 export const categoriasProductos = async(req, res) => {
     try {
         const products_categories = await categorias.findAndCountAll({
+            attributes: [
+                ["id", "idCategoria"],
+                "nombre",
+                [literal('(SELECT COUNT(*) FROM productos_categorias where productos_categorias.id_categoria=categorias.id)'), 'cantProductos']
             
+            ],
+
             include: {
                 association: "productos_categoria",
                 required: true,
                 attributes: []
             },
+            
+
 
         });
         res.status(200).json({
