@@ -16,8 +16,18 @@ npm run dev
     "request": "http://localhost:3000/api/productos"
 }
 ```
+**3. Endpoint**
 
+```json
+{
+    "method": "GET",
+    "request": "http://localhost:3000/api/categorias"
+}
+```
 
+## La coleccion de postman se encontrara dentro de este repo en pruebaNode.postman_collection.json
+
+[POSTMAN]()
 
 
 
