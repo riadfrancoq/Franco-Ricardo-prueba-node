@@ -13,7 +13,9 @@ export const categoriasProductos = async(req, res) => {
                 [literal('(SELECT COUNT(*) FROM productos_categorias where productos_categorias.id_categoria=categorias.id)'), 'cantProductos']
             
             ],
-
+            order: [
+                ["cantProductos", "DESC"]
+            ],
             include: {
                 association: "productos_categoria",
                 required: true,
