@@ -27,7 +27,7 @@ npm run dev
 
 ## La coleccion de postman se encontrara dentro de este repo en pruebaNode.postman_collection.json
 
-[POSTMAN]()
+[POSTMAN](https://github.com/riadfrancoq/Franco-Ricardo-prueba-node/blob/main/pruebaNode2.postman_collection.json)
 
 
 
