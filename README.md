@@ -7,3 +7,17 @@ npm i
 
 npm run dev
 ```
+
+**1. Endpoint**
+
+```json
+{
+    "method": "GET",
+    "request": "http://localhost:3000/api/productos"
+}
+```
+
+
+
+
+
